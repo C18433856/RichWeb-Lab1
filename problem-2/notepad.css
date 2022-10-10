@@ -1,0 +1,22 @@
+#input{
+  margin: auto;
+  width: 20vw;
+}
+
+article{
+  text-align: center;
+  background-color: blue;
+  word-wrap: break-word;
+  width: 20vw;
+  margin: auto;
+  margin-top: 1vh;
+  color: white;
+  font-size: 3vh;
+}
+
+#buttons{
+  text-align: center;
+  width: 20vw;
+  margin: auto;
+  font-size: 3vh;
+}
