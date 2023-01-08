@@ -11,8 +11,15 @@ window.location.href = "https://www.google.ie/search?q=guinea+pig&source=lnms&tb
 
 // get all the elements from the body
 const elements = document.body.children;
-for (let i = 0; i < elements.length; i++){
-	const guineapig = document.createElement('img');
-  	guineapig.src = guineaPigs[i%4];
-	elements[i].replaceWith(guineapig)
-}
+
+let i = 0
+Interval = setInterval(() => {
+	const gpimg = document.createElement('img');
+  	gpimg.src = guineaPigs[i%4];
+	gpimg.style.maxHeight = "50px";
+	gpimg.style.maxWidth = "50px";
+	elements[i].replaceWith(gpimg)
+	i = i + 1
+	if(i === elements.length) {clearInterval(Interval)}
+	
+}, 1000)
