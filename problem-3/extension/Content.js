@@ -1,29 +1,18 @@
 //array of images
-let catsImages = [
-    "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png",
-    "https://e3.365dm.com/21/03/768x432/skynews-cats-missing-microchip_5315182.jpg?20210323142004",
-    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc3836660-7846-11eb-80c3-8cc375faed89.jpg?crop=5729%2C3222%2C187%2C805&resize=1200",
-    "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/07/petting_pet_cat-1296x728-header.jpg?w=1155&h=1528",
-	"https://lh3.googleusercontent.com/pw/AL9nZEXYJlrVkYoKIkpx07_3F4HOiTiOheaoaiRAcwrUg3C613-jkzEubJ3k8Z9fDjG5IfVqCzorphZ00vp6mIyB79GtCsoyV69xXe9cqrA0zglgrcvYhH2UP4cDR88WTm1AmuyCxQHAWCB5JzKD7eD94dtNZA=w690-h920-no"
+let guineaPigs = [
+    "https://www.zooplus.ie/magazine/wp-content/uploads/2022/03/peruvian-guinea-pig-with-swirly-hair.jpeg",
+    "https://cf.ltkcdn.net/small-mammals/guinea-pigs/images/orig/326593-2119x1413-sheltie-guinea-pig.jpg",
+    "https://www.thesprucepets.com/thmb/vENVsXZsjDeyWLWTLBNPgDcf51Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/about-guinea-pigs-1238899-hero-fd6b867b342e485796253c6c57b2d6c6.jpg",
+    "https://media.os.fressnapf.com/cms/2020/08/5f2bd60dd7cac-5f2bd60dd7cadMeerschweinchen_594x320.jpg.jpg",
 ];
 
 if (self.location.href == "https://www.google.ie/")
 window.location.href = "https://www.google.ie/search?q=guinea+pig&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiyzqnL2Lj8AhVIUcAKHanqD04Q_AUoAXoECAEQAw&biw=1536&bih=754&dpr=1.25#imgrc=gd9VV1JVVQDS3M";
 
-//reverse through array of images
-//getting random image from the array we created before (we use math.floor and math.random to grab a random index in the array)
-//const imgs = document.getElementsByTagName("img");
-//for(let i = 0; i < imgs.length; i++) {
-//    const randomImg = Math.floor(Math.random() * catsImages.length)
-//    imgs[i].src = catsImages[randomImg]
-//}
-//do the same for h1 elements
-const headers = document.getElementsByTagName("h1");
-for (let i = 0; i < headers.length; i++){
-    headers[i].innerText = "Cats are awesome.";
-}
-//do the same for p elements
-const p = document.getElementsByTagName("p");
-for (let i = 0; i < p.length; i++){
-    p[i].innerText = "This website is now about cats.";
+// get all the elements from the body
+const elements = document.body.children;
+for (let i = 0; i < elements.length; i++){
+	const guineapig = document.createElement('img');
+  	guineapig.src = guineaPigs[i%4];
+	elements[i].replaceWith(guineapig)
 }
