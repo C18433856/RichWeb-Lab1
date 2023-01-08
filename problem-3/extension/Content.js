@@ -12,14 +12,19 @@ window.location.href = "https://www.google.ie/search?q=guinea+pig&source=lnms&tb
 // get all the elements from the body
 const elements = document.body.children;
 
+
+if(confirm("Press OK to replace everything with Guinea Pigs.")){
 let i = 0
 Interval = setInterval(() => {
 	const gpimg = document.createElement('img');
   	gpimg.src = guineaPigs[i%4];
-	gpimg.style.maxHeight = "50px";
-	gpimg.style.maxWidth = "50px";
+	gpimg.style.maxHeight = "200px";
+	gpimg.style.maxWidth = "200px";
 	elements[i].replaceWith(gpimg)
 	i = i + 1
 	if(i === elements.length) {clearInterval(Interval)}
 	
-}, 1000)
+}, 1000)}
+
+
+
