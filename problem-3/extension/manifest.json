@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "C18433856-Extension",
+    "name": "GuineaPigElementReplacer",
     "version": "1.0.0",
     "content_scripts": [
         {

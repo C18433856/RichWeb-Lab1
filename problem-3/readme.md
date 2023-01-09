@@ -1,0 +1,3 @@
+This simple extension prompts the user by asking them if they would like everything on the page they are currently seeing to be replaced with guinea pigs. If cancel is pressed nothing happens and the page displays as normal. If OK is pressed, every second one of the elements in the body of the page will be replaced with an image of a guinea pig.
+
+Another feature of this extension is that trying to go to https://www.google.ie/ will instead bring you to a picture of a guinea pig in google images.

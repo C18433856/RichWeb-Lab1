@@ -6,6 +6,7 @@ let guineaPigs = [
     "https://media.os.fressnapf.com/cms/2020/08/5f2bd60dd7cac-5f2bd60dd7cadMeerschweinchen_594x320.jpg.jpg",
 ];
 
+// If trying to go to google Ireland go see a Guinea Pig instead
 if (self.location.href == "https://www.google.ie/")
 window.location.href = "https://www.google.ie/search?q=guinea+pig&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiyzqnL2Lj8AhVIUcAKHanqD04Q_AUoAXoECAEQAw&biw=1536&bih=754&dpr=1.25#imgrc=gd9VV1JVVQDS3M";
 
